@@ -1,0 +1,189 @@
+.container {
+  cursor: pointer;
+}
+
+.container:hover .title,
+.container:hover .content {
+  background: linear-gradient(
+    90deg,
+    rgb(238, 69, 100) 0%,
+    rgb(156, 7, 62) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container:hover .box {
+  background: #fff;
+}
+
+.container:hover .svgBox {
+  color: rgb(238, 69, 100);
+}
+
+.imageBox {
+  position: relative;
+  height: 24.75rem;
+  width: 33.4rem;
+  border-top-right-radius: 2.4rem;
+  border-top-left-radius: 2.4rem;
+  z-index: 2;
+}
+
+.image {
+  object-fit: cover;
+  border-top-right-radius: 2.4rem;
+  border-top-left-radius: 2.4rem;
+}
+
+.box {
+  border-bottom-right-radius: 2.4rem;
+  border-bottom-left-radius: 2.4rem;
+  background: #191b1b;
+  padding: 0 1.6rem;
+  padding-bottom: 2rem;
+  padding-top: 0.8rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  color: #c1c9c9;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.svgBox {
+  width: 12rem;
+  height: 2.1rem;
+  color: #c1c9c9;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 19.5rem;
+    height: 20.2rem;
+  }
+  .imageBox {
+    width: 19.5rem;
+    height: 14.5rem;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .box {
+    padding: 0.4rem 0.9rem;
+    height: 5.6rem;
+  }
+  .title {
+    font-size: 2.1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .svgBox {
+    width: 7rem;
+    height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    cursor: pointer;
+    max-width: 35.8rem;
+    width: 100%;
+    height: 6.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6rem;
+    background: #191b1b;
+  }
+
+  .container:hover .title,
+  .container:hover .content {
+    background: linear-gradient(
+      90deg,
+      rgb(238, 69, 100) 0%,
+      rgb(156, 7, 62) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .container:hover > .box {
+    background: #fff;
+  }
+
+  .container:hover .svgBox {
+    color: rgb(238, 69, 100);
+  }
+
+  .imageBox {
+    position: relative;
+    width: 9rem;
+    height: 6.75rem;
+    border-radius: 1.6rem 0 0 1.6rem;
+    flex-shrink: 0;
+  }
+
+  .image {
+    object-fit: cover;
+    border-radius: 1.6rem 0 0 1.6rem;
+  }
+
+  .box {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 26.8rem;
+    padding: 0 1.3rem;
+    padding-bottom: 0.4rem;
+    border-radius: 0 1.6rem 1.6rem 0;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .subBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    color: #c1c9c9;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+
+  .svgBox {
+    width: 8rem;
+    color: #c1c9c9;
+  }
+}

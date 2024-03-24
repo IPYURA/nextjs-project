@@ -1,0 +1,218 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0d0e0e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 33rem;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.8rem;
+  margin-bottom: 3.4rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.columnBox {
+  display: flex;
+  flex-direction: column;
+  width: 19.4rem;
+}
+
+.label {
+  font-size: 2.4rem;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.span {
+  font-size: 1.8rem;
+  vertical-align: top;
+}
+
+.input {
+  background: #0d0e0e;
+  padding: 1.6rem 1.2rem;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #fff;
+  border-radius: 1.2rem;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.valid {
+  border: 0.1rem solid #30d158;
+}
+
+.invalid {
+  border: 0.1rem solid #ff453a;
+}
+
+.first {
+  border: 0.1rem solid #c1c9c9;
+}
+
+.input::placeholder {
+  color: #c1c9c9;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.message {
+  color: #30d158;
+  text-align: right;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  height: 1.7rem;
+}
+
+.error {
+  color: #ff453a;
+}
+
+.correct {
+  color: #30d158;
+}
+
+.button {
+  all: unset;
+  border-radius: 2.4rem;
+  background: #2b2f2f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  padding: 0.8rem;
+  cursor: pointer;
+  margin: 3.6rem 0;
+}
+
+.button:disabled {
+  background: #1d1a1a;
+  cursor: auto;
+}
+
+.inputBox {
+  background: #0d0e0e;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.emailInput {
+  all: unset;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #fff;
+  padding: 1.6rem 1.2rem;
+  width: 28rem;
+}
+
+.emailInput::placeholder {
+  color: #c1c9c9;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.emailButton {
+  all: unset;
+  border-radius: 0.6rem;
+  background: #43f;
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  width: 8.3rem;
+  height: 2.7rem;
+  text-align: center;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.emailButton:disabled {
+  background: rgb(56, 53, 90);
+  cursor: auto;
+}
+
+.emailCodeInput {
+  all: unset;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #fff;
+  padding: 1.6rem 1.2rem;
+  width: 32rem;
+}
+
+.emailCodeInput::placeholder {
+  color: #c1c9c9;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.emailCodeButton {
+  all: unset;
+  border-radius: 0.6rem;
+  background: #43f;
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  width: 5.1rem;
+  height: 2.7rem;
+  text-align: center;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.emailCodeButton:disabled {
+  background: rgb(56, 53, 90);
+  cursor: auto;
+}

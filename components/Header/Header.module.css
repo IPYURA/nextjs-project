@@ -1,0 +1,21 @@
+.columnBox {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .emptyBox {
+    height: 17.1rem;
+    background-color: #0d0e0e;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emptyBox {
+    height: 8rem;
+    background-color: #0d0e0e;
+  }
+}

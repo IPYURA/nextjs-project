@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) {
+  .link {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #fff;
+    padding: 0 1.2rem;
+    margin: 0 1.2rem;
+    text-decoration: none;
+    transition:0.5s;
+  }
+  .link:hover {
+    transform: translateY(-0.2rem);
+  }
+
+  .active {
+    font-weight: 600;
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .link {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .active {
+    font-weight: 600;
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+.link:hover {
+  color: rgb(238, 69, 100);
+}

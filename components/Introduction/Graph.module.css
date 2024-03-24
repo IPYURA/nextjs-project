@@ -1,0 +1,398 @@
+@media screen and (min-width: 768px) {
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: #0d0e0e;
+    padding: min(10rem, 6.944vw) 0;
+  }
+
+  .section > div.text:nth-child(1) {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: min(1.8rem, 1.25vw);
+    font-weight: 300;
+    margin-bottom: min(1.2rem, 0.833vw);
+  }
+
+  .section > div.text:nth-child(2) {
+    color: #fff;
+    text-align: center;
+    font-size: min(3.6rem, 2.5vw);
+    font-weight: 600;
+    margin-bottom: min(6rem, 4.167vw);
+  }
+
+  .graph {
+    display: flex;
+    position: relative;
+    height: min(48rem, 33.33vw);
+    margin-bottom: min(3rem, 2.083vw);
+  }
+
+  .graph > .phase {
+    height: 100%;
+    background: #0d0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: min(2.4rem, 1.667vw) 0;
+    gap: min(0.8rem, 0.556vw);
+    position: relative;
+    transition: all 0.2s linear;
+  }
+
+  .graph > .phase:hover {
+    background: #191b1b;
+  }
+
+  .phase:hover > .title,
+  .phase:hover > .content {
+    color: #fff;
+  }
+
+  .graph > .phase:nth-child(1) {
+    width: min(16.5rem, 11.458vw);
+  }
+
+  .graph > .phase:nth-child(2) {
+    width: min(18rem, 12.5vw);
+  }
+  .graph > .phase:nth-child(3) {
+    width: min(25.5rem, 17.708vw);
+  }
+  .graph > .phase:nth-child(4) {
+    width: min(46.5rem, 32.2917vw);
+  }
+  .graph > .phase:nth-child(5) {
+    width: min(10.5rem, 7.2916vw);
+  }
+  .graph > .phase:nth-child(6) {
+    width: min(13.5rem, 9.375vw);
+  }
+
+  .title {
+    color: #898e8f;
+    text-align: center;
+    font-size: min(1.8rem, 1.25vw);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .content {
+    color: #898e8f;
+    font-size: min(1.4rem, 0.9722vw);
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .graph > .phase:nth-child(n) > .stick {
+    height: auto;
+    position: absolute;
+    width: calc(100% + 0.14vw);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .stick > * {
+    z-index: 2;
+  }
+
+  .graph > .phase:nth-child(1) > .stick {
+    bottom: 0%;
+  }
+
+  .graph > .phase:nth-child(2) > .stick {
+    bottom: 8.35%;
+  }
+
+  .graph > .phase:nth-child(3) > .stick {
+    bottom: 33.28%;
+  }
+
+  .graph > .phase:nth-child(4) > .stick {
+    bottom: 41.4%;
+  }
+
+  .graph > .phase:nth-child(5) > .stick {
+    bottom: 45.6%;
+  }
+
+  .graph > .phase:nth-child(6) > .stick {
+    bottom: 53.8%;
+  }
+
+  .graph > .phase > .date {
+    position: absolute;
+    color: #fff;
+    font-size: min(1.4rem, 0.9722vw);
+    font-weight: 200;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(-50%, 150%);
+  }
+
+  .xAxis {
+    position: absolute;
+    width: min(131.1rem, 91.0416vw);
+    height: auto;
+    bottom: -1.45%;
+    right: 0%;
+    z-index: 3;
+  }
+
+  .yAxis {
+    position: absolute;
+    height: min(48.5rem, 33.6806vw);
+    width: auto;
+    top: 0%;
+    left: -0.45%;
+    z-index: 3;
+  }
+
+  .xAxixText {
+    position: absolute;
+    color: #fff;
+    font-size: min(1.4rem, 0.9722vw);
+    font-weight: 200;
+    right: 0%;
+    bottom: 0;
+    transform: translateY(150%);
+  }
+
+  .yAxixText {
+    position: absolute;
+    color: #fff;
+    font-size: min(1.4rem, 0.9722vw);
+    font-weight: 200;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-135%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+    height: 48rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: #0d0e0e;
+    margin-bottom: 3.2rem;
+  }
+
+  .section > div.text:nth-child(1) {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+  }
+
+  .section > div.text:nth-child(2) {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+  }
+  .graphBox {
+    display: flex;
+    position: relative;
+    width: 95%;
+    margin-left: 5%;
+    height: 100%;
+    overflow-x: scroll;
+    padding: 0 5rem;
+    scrollbar-color: #2b2f2f #191b1b;
+    scrollbar-width: thin;
+  }
+
+  .graphBox::-webkit-scrollbar {
+    height: 0.8rem;
+  }
+  .graphBox::-webkit-scrollbar-thumb {
+    background-color: #2b2f2f;
+    border-radius: 0.8rem;
+  }
+  .graphBox::-webkit-scrollbar-track {
+    background-color: #191b1b;
+    border-radius: 0.8rem;
+  }
+
+  .graph {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: 34.85rem;
+  }
+
+  .graph > .phase {
+    height: 100%;
+    background: #0d0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.65rem 0;
+    gap: 0.55rem;
+    position: relative;
+    transition: all 0.2s linear;
+  }
+
+  .graph > .phase:hover {
+    background: #191b1b;
+  }
+
+  .phase:hover > .title,
+  .phase:hover > .content {
+    color: #fff;
+  }
+
+  .graph > .phase:nth-child(1) {
+    width: 11.34rem;
+    flex-shrink: 0;
+  }
+
+  .graph > .phase:nth-child(2) {
+    width: 12.37rem;
+    flex-shrink: 0;
+  }
+  .graph > .phase:nth-child(3) {
+    width: 17.52rem;
+    flex-shrink: 0;
+  }
+  .graph > .phase:nth-child(4) {
+    width: 31.96rem;
+    flex-shrink: 0;
+  }
+  .graph > .phase:nth-child(5) {
+    width: 7.21rem;
+    flex-shrink: 0;
+  }
+  .graph > .phase:nth-child(6) {
+    width: 9.27rem;
+    flex-shrink: 0;
+  }
+
+  .title {
+    color: #898e8f;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .content {
+    color: #898e8f;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .graph > .phase:nth-child(n) > .stick {
+    height: auto;
+    position: absolute;
+    width: calc(100% + 0.3rem);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .stick > * {
+    z-index: 2;
+  }
+
+  .graph > .phase:nth-child(1) > .stick {
+    bottom: 0%;
+  }
+
+  .graph > .phase:nth-child(2) > .stick {
+    bottom: 7.95%;
+  }
+
+  .graph > .phase:nth-child(3) > .stick {
+    bottom: 31.77%;
+  }
+
+  .graph > .phase:nth-child(4) > .stick {
+    bottom: 39.73%;
+  }
+
+  .graph > .phase:nth-child(5) > .stick {
+    bottom: 43.8%;
+  }
+
+  .graph > .phase:nth-child(6) > .stick {
+    bottom: 51.9%;
+  }
+
+  .graph > .phase > .date {
+    position: absolute;
+    color: #fff;
+    font-size: 0.96rem;
+    font-weight: 200;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(-50%, 150%);
+  }
+
+  .xAxis {
+    position: absolute;
+    width: 90.2rem;
+    height: auto;
+    bottom: -1.75%;
+    right: 0%;
+    z-index: 3;
+    /* display: none; */
+  }
+
+  .yAxis {
+    position: absolute;
+    height: 35.25rem;
+    width: auto;
+    top: 0%;
+    left: -0.65%;
+    z-index: 3;
+    /* display: none; */
+  }
+
+  .xAxixText {
+    position: absolute;
+    color: #fff;
+    font-size: 0.96rem;
+    font-weight: 200;
+    right: 0%;
+    bottom: 0;
+    transform: translateY(150%);
+  }
+
+  .yAxixText {
+    position: absolute;
+    color: #fff;
+    font-size: 0.96rem;
+    font-weight: 200;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-135%);
+  }
+
+  /* .axis {
+    position: absolute;
+    height: 485px;
+    width: 1311px;
+    top:0%;
+    right: 0%;
+    z-index: 1;
+  } */
+}

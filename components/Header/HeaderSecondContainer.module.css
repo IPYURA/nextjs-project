@@ -1,0 +1,41 @@
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0);
+  height: 13rem;
+  justify-content: space-evenly;
+}
+
+.emptyBox {
+  flex-basis: 55rem;
+  flex-shrink: 1;
+}
+
+.linkBox {
+  display: flex;
+  align-items: center;
+}
+
+.linkBox:hover * {
+  color: rgb(238, 69, 100);
+  transform: translateY(-0.2rem);
+}
+.linkBox * {
+  transition:0.5s;
+}
+
+.svgLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  color: #fff;
+}
+
+.svgTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17.6rem;
+  color: #fff;
+}

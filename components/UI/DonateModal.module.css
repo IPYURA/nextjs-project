@@ -1,0 +1,96 @@
+.wrap {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+}
+.modalWrap {
+  position: relative;
+  border: 2px solid #d4ddde;
+  width: 76.4rem;
+  height: 50rem;
+  padding: 5.9rem 3rem 4.8rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2.4rem;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(to right, #4433ff, #7d50ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.desc {
+  margin: 1.4rem;
+  padding: 1.2rem;
+  width: 47.4rem;
+  height: 14.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.desc h5 {
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #0d0e0e;
+  font-weight: 200;
+}
+.qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.qrcode img {
+  width: 10.4rem;
+  height: 10.4rem;
+}
+.qrDesc {
+  margin-bottom: 1.8rem;
+  width: 42.1rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.accountNumber {
+  position: relative;
+  height: auto;
+  text-align: center;
+  line-height: 1.4;
+}
+.accountNumber h3 {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.accountNumber h4 {
+  font-size: 1.6rem;
+  color: #c1c9c9;
+}
+.copyButton {
+  all: unset;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.copyButton > * {
+  width: 100%;
+  height: 100%;
+}

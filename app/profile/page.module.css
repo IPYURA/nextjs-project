@@ -1,0 +1,118 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--EoP-FW0, #fff);
+}
+
+.wrapper {
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 68.3rem;
+  gap: 3.6rem;
+}
+
+.titleBox {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.hidden {
+  display: flex;
+  visibility: hidden;
+}
+
+.title {
+  color: var(--EoP-VB0, #000);
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-right: 0.4rem;
+}
+
+.title ~ button {
+  all: unset;
+  font-size: 2.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--EoP-AB, #43f);
+}
+
+.blueBox{
+  display: flex;display: flex;
+}
+
+.svgRectangle {
+  width: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueText {
+  display: flex;
+  padding: 0.4rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  background: var(--EoP-AB, #43f);
+  color: var(--EoP-FW0, #fff);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.infoBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.infoBox {
+  border-radius: 1.2rem;
+  border: 0.1rem solid var(--EoP-FW1, #e7f1f1);
+  width: 100%;
+  display: flex;
+  padding: 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoBoxWrapper:nth-child(2) > .infoBox:nth-child(1) {
+  background: var(--EoP-FW1, #e7f1f1);
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.info {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.infoName {
+  color: var(--EoP-VB2, #191b1b);
+  width: 8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.infoContent {
+  color: var(--EoP-FW4, #898e8f);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.changeButton {
+  all: unset;
+  cursor: pointer;
+  color: var(--EoP-AB, #43f);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+}

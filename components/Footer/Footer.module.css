@@ -1,0 +1,222 @@
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    justify-content: space-around;
+    padding: 5.3rem 0;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .logoBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .svgLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    color: #fff;
+  }
+
+  .svgTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17.6rem;
+    color: #fff;
+  }
+
+  .info {
+    color: #898e8f;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .info > br {
+    display: none;
+  }
+
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linkBox a {
+    color: #898e8f;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+  }
+
+  .linkBox a:link {
+    color: #8b8b8b;
+  }
+
+  .linkBox a:visited {
+    color: #8b8b8b;
+  }
+
+  .email {
+    color: #898e8f;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .customerService {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    background: #191b1b;
+    display: flex;
+    width: 14.9rem;
+    height: 2.8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .svgCustomerService {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+  }
+
+  .customerServiceText {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    justify-content: space-around;
+    padding: 1.6rem;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logoBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.2rem;
+  }
+
+  .svgLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    color: #fff;
+  }
+
+  .svgTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.4rem;
+    color: #fff;
+  }
+
+  .info {
+    color: #898e8f;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .info > span {
+    display: none;
+  }
+
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linkBox a {
+    color: #898e8f;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+  }
+
+  .linkBox a:link {
+    color: #8b8b8b;
+  }
+
+  .linkBox a:visited {
+    color: #8b8b8b;
+  }
+
+  .email {
+    color: #898e8f;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 0.4rem;
+  }
+
+  .customerService {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0.325rem;
+    background: #191b1b;
+    display: flex;
+    width: 8.9rem;
+    height: 1.73rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.21rem;
+  }
+
+  .svgCustomerService {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem;
+  }
+
+  .customerServiceText {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}

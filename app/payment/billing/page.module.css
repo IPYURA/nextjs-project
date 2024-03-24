@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d0e0e;
+  padding: 5.4rem 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 68.4rem;
+}
+
+.title {
+  color: var(--EoP-FW3, #c1c9c9);
+  text-align: right;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 300;
+}

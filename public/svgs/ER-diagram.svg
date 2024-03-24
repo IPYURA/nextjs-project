@@ -1,0 +1,13 @@
+<svg viewBox="0 0 73 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 59">
+<rect id="Rectangle 40" x="24.5" width="24" height="8" rx="2.4" fill="currentColor"/>
+<path id="Rectangle 41" d="M37.259 19.4529C36.7664 19.2887 36.2338 19.2887 35.7412 19.4529L23.2385 23.6205C22.8738 23.742 22.8738 24.2579 23.2385 24.3794L35.7412 28.547C36.2338 28.7112 36.7664 28.7112 37.259 28.547L49.7617 24.3794C50.1264 24.2579 50.1264 23.742 49.7617 23.6205L37.259 19.4529Z" fill="currentColor"/>
+<rect id="Rectangle 42" x="48.5" y="36" width="24" height="8" rx="2.4" fill="currentColor"/>
+<rect id="Rectangle 43" x="48.5" y="52" width="24" height="8" rx="2.4" fill="currentColor"/>
+<rect id="Rectangle 45" x="0.5" y="52" width="24" height="8" rx="2.4" fill="currentColor"/>
+<path id="Line 24" d="M35.5 16C35.5 16.5523 35.9477 17 36.5 17C37.0523 17 37.5 16.5523 37.5 16L35.5 16ZM35.5 8L35.5 16L37.5 16L37.5 8L35.5 8Z" fill="currentColor"/>
+<path id="Line 25" d="M59.5 50C59.5 50.5523 59.9477 51 60.5 51C61.0523 51 61.5 50.5523 61.5 50L59.5 50ZM59.5 44L59.5 50L61.5 50L61.5 44L59.5 44Z" fill="currentColor"/>
+<path id="Line 26" d="M60.5 30L60.5 26.4C60.5 25.0745 59.4255 24 58.1 24H54.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line 27" d="M12.5 50L12.5 26.4C12.5 25.0745 13.5745 24 14.9 24L18.5 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

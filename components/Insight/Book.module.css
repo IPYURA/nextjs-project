@@ -1,0 +1,300 @@
+.container {
+  width: 100%;
+  background-color: #0d0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 2.4rem;
+  gap: 2.4rem;
+}
+.logoWrap {
+  width: 8rem;
+  height: 8rem;
+}
+.bookList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.book {
+  width: 100%;
+  max-width: 115.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  gap: 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.initBook {
+  border: 0.2rem solid #2b2f2f;
+  background: #191b1b;
+  height: 26.4rem;
+  overflow: hidden;
+}
+
+.initBook:hover {
+  border: 0.2rem solid rgb(238, 69, 100);
+  background: #000;
+  height: 26.4rem;
+  overflow: hidden;
+}
+
+.clickedBook {
+  border: 0.2rem solid rgb(238, 69, 100);
+  background: #000;
+  pointer-events: none;
+  height: 58.9rem;
+}
+
+.bookContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookSubContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+
+.button {
+  transition: all 0.3s linear;
+}
+
+.clickedButton {
+  transform: rotateX(180deg);
+  pointer-events: all;
+}
+
+.ImageContainer {
+  width: 20.4rem;
+  height: 21.6rem;
+  position: relative;
+}
+
+.bookImage {
+  object-fit: contain;
+}
+
+.bookTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.bookTitle {
+  color: #fff;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+  border-bottom: solid 0.1rem #e7f1f1;
+}
+
+.bookContent {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bookDetailContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 12rem;
+  gap: 7.2rem;
+  border-radius: 1.2rem;
+  background: #0d0e0e;
+  transition: all 0.3s cubic-bezier(1, 0, 0.58, 0.59);
+}
+
+.close {
+  opacity: 0;
+  transition: all 0.3s step-end;
+}
+
+.unpublishedBook {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.unpublishedBookImg {
+  width: 15rem;
+  height: 20.4rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  opacity: 0.5;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unpublishedBookTitle {
+  width: 15rem;
+  height: 3.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.4rem;
+  background: #191b1b;
+  color: #e7f1f1;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.072rem;
+  pointer-events: auto;
+}
+
+.unpublishedBookTitle:active {
+  pointer-events: none;
+}
+
+.unpublishedBookTitle:hover {
+  background: #e7f1f1;
+  color: #0d0e0e;
+}
+.blank {
+  display: none;
+}
+.arrowsWrap {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .book {
+    padding: 1.85rem;
+    max-height: 52.7rem;
+    transition: all 0.3s linear;
+  }
+  .initBook {
+    height: 20.6rem;
+  }
+  .initBook:hover {
+    height: 20.6rem;
+  }
+  .bookContainer {
+    height: 16.5rem;
+  }
+  .bookSubContainer {
+    gap: 0.5rem;
+    height: 100%;
+  }
+  .bookTitle {
+    font-size: 2.8rem;
+  }
+  .bookContent {
+    font-size: 1.2rem;
+  }
+  .ImageContainer {
+    width: 15.9rem;
+    height: 16.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 3.2rem 1.6rem;
+  }
+  .container br {
+    display: none;
+  }
+  .logoWrap {
+    width: 4rem;
+    height: 4rem;
+  }
+  .book {
+    padding: 1.6rem;
+  }
+  .initBook {
+    height: 14rem;
+  }
+  .initBook:hover {
+    border: 0.2rem solid rgb(238, 69, 100);
+    background: #000;
+    height: 14rem;
+    overflow: hidden;
+  }
+  .clickedBook {
+    height: 32.2rem;
+  }
+  .bookContainer {
+    min-height: 10.8rem;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .bookSubContainer {
+    height: 100%;
+    gap: 0.4rem;
+  }
+  .ImageContainer {
+    min-width: 10.2rem;
+    width: 10.2rem;
+    height: 100%;
+    position: relative;
+  }
+  .bookTextBox {
+    width: auto;
+    height: 100%;
+    gap: 0.4rem;
+  }
+  .bookTitle {
+    font-size: 2rem;
+  }
+  .bookContent {
+    font-size: 1rem;
+  }
+
+  .bookDetailContainer {
+    justify-content: center;
+    height: 15.8rem;
+    padding: 1.6rem 0;
+    gap: 4vw;
+  }
+
+  .unpublishedBook {
+    width: 7.5rem;
+    height: 12.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .unpublishedBookImg {
+    width: 100%;
+    height: 10.2rem;
+    border-radius: 0;
+  }
+
+  .unpublishedBookTitle {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .blank {
+    display: block;
+    width: 1.6rem;
+    height: 100%;
+  }
+  .arrowsWrap {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}

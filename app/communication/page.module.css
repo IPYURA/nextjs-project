@@ -1,0 +1,10 @@
+.section {
+  height: calc(100vh - 17.1rem);
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    height: auto;
+  }
+}

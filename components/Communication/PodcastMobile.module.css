@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 9.7rem 1.6rem;
+  background: #0d0e0e;
+}
+.title {
+  text-align: center;
+  font-size: 3.6rem;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+.link {
+  all: unset;
+  margin: 0 auto;
+  width: 14.8rem;
+  height: 5.5rem;
+  font-size: 2.7rem;
+  color: #fff;
+  border-radius: 2.4rem;
+  background: var(--EoP-GB, linear-gradient(90deg, #43f 0%, #020064 100%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > .link:hover {
+  background: var(--EoP-AB, #e7f1f1);
+  color: var(--EoP-FW0, #000);
+}

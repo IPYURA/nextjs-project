@@ -1,0 +1,77 @@
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: min(5rem, 3.4722vw);
+    padding-bottom: min(13rem, 9.0277vw);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: #0d0e0e;
+    gap: min(3.6rem, 2.5vw);
+  }
+
+  .section > div:nth-child(1) {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: min(2.4rem, 1.667vw);
+    font-weight: 400;
+  }
+
+  .section > div:nth-child(2) {
+    color: #fff;
+    text-align: center;
+    font-size: min(7.2rem, 5vw);
+    font-weight: 800;
+    padding: 0 min(1rem, 0.6944vw);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0) 32%,
+      rgb(238, 69, 100) 32%,
+      rgb(238, 69, 100) 84%,
+      rgba(0, 0, 0, 0) 84%,
+      rgba(0, 0, 0, 0) 100%,
+      transparent 80%
+    );
+    mix-blend-mode: lighten;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: min(5rem, 3.4722vw);
+    padding-bottom: min(13rem, 9.0277vw);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: #0d0e0e;
+    gap: min(3.6rem, 2.5vw);
+  }
+
+  .section > div:nth-child(1) {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: max(1.2rem, 3vw);
+    font-weight: 400;
+  }
+
+  .section > div:nth-child(2) {
+    color: #fff;
+    text-align: center;
+    font-size: max(2rem, 5vw);
+    font-weight: 800;
+    padding: 0 min(1rem, 0.6944vw);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0) 32%,
+      rgb(238, 69, 100) 32%,
+      rgb(238, 69, 100) 84%,
+      rgba(0, 0, 0, 0) 84%,
+      rgba(0, 0, 0, 0) 100%,
+      transparent 80%
+    );
+    mix-blend-mode: lighten;
+  }
+}

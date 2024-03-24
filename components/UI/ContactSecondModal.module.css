@@ -1,0 +1,69 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.modalWrap {
+  position: relative;
+  z-index: 301;
+  padding: 2.4rem;
+  width: 50.4rem;
+  height: 38.9rem;
+  border-radius: 2.4rem;
+  background: #fff;
+  border: 2px solid #d4ddde;
+}
+.title {
+  margin-bottom: 2.4rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #000;
+}
+.textWrap {
+  margin-bottom: 2.4rem;
+  padding: 1.2rem;
+  width: 100%;
+  min-height: 24rem;
+  border-radius: 1.2rem;
+  background: #f3f3f3;
+  line-height: 1.7;
+}
+.textWrap * {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.textWrap li {
+  position: relative;
+  width: calc(100% - 3rem);
+  margin-left: 3rem;
+  line-height: 1.6;
+}
+.textWrap li::before {
+  content: "- ";
+  position: absolute;
+  left: -1.2rem;
+}
+.additionalText {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+  .modalWrap {
+    width: calc(100% - 3.2rem);
+    max-width: 50.4rem;
+    height: auto;
+    word-break: keep-all;
+    padding: 4.5rem 1.6rem 2.4rem;
+  }
+}

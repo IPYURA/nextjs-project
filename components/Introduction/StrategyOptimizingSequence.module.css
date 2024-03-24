@@ -1,0 +1,1156 @@
+@media screen and (min-width: 768px) {
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: #0d0e0e;
+  }
+
+  .subSection {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - (100% - min(115.6rem, 80.2778vw)) / 2));
+    margin-left: calc((100% - min(115.6rem, 80.2778vw)) / 2);
+    position: relative;
+  }
+
+  .title {
+    color: #fff;
+    font-size: min(6.4rem, 4.4444vw);
+    font-weight: 400;
+  }
+
+  .content {
+    color: #fff;
+    font-size: min(1.8rem, 1.25vw);
+    font-weight: 300;
+    margin-top: min(0.8rem, 0.55556vw);
+    margin-bottom: min(8.1rem, 5.625vw);
+    z-index: 2;
+    white-space: nowrap;
+  }
+
+  .content > li > div:nth-child(1) {
+    padding: 0 min(1.3rem, 0.9028vw);
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .content > li > div:nth-child(2) {
+    display: inline-block;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+
+  .stepList {
+    display: flex;
+    gap: min(0.8rem, 0.5556vw);
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    padding-bottom: min(3.6rem, 2.5vw);
+    padding-right: calc((100% - min(115.6rem, 80.2778vw)) / 2);
+    scrollbar-color: #2b2f2f #191b1b;
+    scrollbar-width: thin;
+  }
+
+  .stepList::-webkit-scrollbar {
+    height: 0.8rem;
+  }
+  .stepList::-webkit-scrollbar-thumb {
+    background-color: #2b2f2f;
+    border-radius: 0.8rem;
+  }
+  .stepList::-webkit-scrollbar-track {
+    background-color: #191b1b;
+    border-radius: 0.8rem;
+  }
+
+  .stepItem {
+    display: flex;
+    flex-direction: column;
+    gap: min(0.8rem, 0.5556vw);
+    position: relative;
+  }
+
+  .stepItem:nth-child(1):hover .svgParallelogramGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(1):hover .svgParallelogramHollowGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(2):hover .svgParallelogramGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(2):hover .svgParallelogramHollowGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(3):hover .svgParallelogramBlue {
+    color: blueviolet;
+  }
+
+  .stepItem:nth-child(3):hover .svgParallelogramBlue {
+    color: blueviolet;
+  }
+
+  .stepItem:nth-child(4):hover .svgParallelogramBlue {
+    color: blueviolet;
+  }
+
+  .stepItem:nth-child(5):hover .svgParallelogramNavy {
+    color: darkslateblue;
+  }
+
+  .stepItem:nth-child(6):hover .svgParallelogramNavy {
+    color: darkslateblue;
+  }
+
+  .stepItem:nth-child(2n) > .stepTitle {
+    visibility: hidden;
+  }
+
+  .stepTitle {
+    color: #fff;
+    font-size: min(3.6rem, 2.5vw);
+    font-weight: 400;
+  }
+
+  .stepContent {
+    width: min(22rem, 15.2778vw);
+    height: min(3.7rem, 2.5694vw);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5.5%);
+    transition: all 1s linear;
+  }
+
+  .stepContent:nth-child(2) {
+    width: min(22rem, 15.2778vw);
+    height: min(3.7rem, 2.5694vw);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5.5%);
+  }
+
+  .stepContent:nth-child(3) {
+    width: min(22rem, 15.2778vw);
+    height: min(3.7rem, 2.5694vw);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(5.5%, -100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .stepContent:nth-child(4) {
+    width: min(22rem, 15.2778vw);
+    height: min(3.7rem, 2.5694vw);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(5.5%, -200%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .stepContent:nth-child(5) {
+    width: min(22rem, 15.2778vw);
+    height: min(3.7rem, 2.5694vw);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(5.5%, -300%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .stepContent.on {
+    transform: translateX(5.5%);
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
+  }
+
+  .stepText {
+    color: #d4ddde;
+    font-size: min(1.8rem, 1.25vw);
+    font-weight: 300;
+    z-index: 2;
+  }
+
+  .stepBrightText {
+    color: #fff;
+    font-size: min(1.8rem, 1.25vw);
+    font-weight: 300;
+    z-index: 2;
+  }
+
+  .svgParallelogramGreen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(24.4rem, 16.944vw);
+    color: #006f77;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramHollowGreen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(24.4rem, 16.944vw);
+    color: #006f77;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramBlue {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(24.4rem, 16.944vw);
+    color: navy;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramHollowBlue {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(24.4rem, 16.944vw);
+    color: navy;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramNavy {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(24.4rem, 16.944vw);
+    color: #020064;
+    transition: all 0.3s linear;
+  }
+
+  .diagramContainer {
+    display: flex;
+    flex-direction: column;
+    width: min(115.6rem, 80.2778vw);
+    gap: min(1.6rem, 1.111vw);
+    padding: min(11rem, 7.6389vw) 0;
+  }
+
+  .diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: min(1.8rem, 1.25vw);
+    padding: min(2.4rem, 1.6667vw) 0;
+    border-radius: 2.4rem;
+    border: 0.1rem solid #2b2f2f;
+    background: #0d0e0e;
+    transition: all 0.3s linear;
+  }
+
+  .diagram * {
+    transition: all 0.3s linear;
+  }
+
+  .diagram:hover {
+    border: 0.1rem solid #2b2f2f;
+    background: #2b2f2f;
+    transition: all 0.3s linear;
+  }
+
+  .diagram:hover * {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s linear;
+  }
+
+  .diagram:hover .svgDottedLine {
+    color: #898e8f;
+  }
+
+  .diagram:hover .circle,
+  .diagram:hover .square {
+    background-image: linear-gradient(#000, #000),
+      linear-gradient(90deg, rgb(217, 23, 94) 0%, rgb(238, 69, 100) 100%);
+    transition: all 0.3s linear;
+  }
+
+  .diagramSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circleList {
+    display: flex;
+    flex-direction: column;
+    gap: min(0.8rem, 0.5556vw);
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 0.1rem solid transparent;
+    background-image: linear-gradient(#000, #000),
+      linear-gradient(#2b2f2f, #2b2f2f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: min(4rem, 2.7778vw);
+    height: min(4rem, 2.7778vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .circleText {
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .circleText > span:nth-child(1) {
+    position: relative;
+    line-height: 0%;
+    font-size: min(1.4rem, 0.9722vw);
+  }
+
+  .circleText > span:nth-child(2) {
+    position: relative;
+    font-size: min(1rem, 0.6944vw);
+    transform: translateY(20%);
+  }
+
+  .lineBox {
+    width: min(6rem, 4.167vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .svgDottedLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min(47.2rem, 32.7778vw);
+    color: #2b2f2f;
+  }
+
+  .svgOneToOneTriangleArrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #fff;
+    visibility: hidden;
+  }
+
+  .arrowBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: min(4.8rem, 3.3333vw);
+    margin-left: min(0.8rem, 0.5556vw);
+    margin-right: min(1rem, 0.6944vw);
+  }
+
+  .svgThreeToOneTriangleArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: min(7.7rem, 5.3472vw);
+  }
+
+  .svgTwoToOneTriangleArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: min(7.7rem, 5.3472vw);
+  }
+
+  .square {
+    border: 0.1rem solid transparent;
+    background-image: linear-gradient(#000, #000),
+      linear-gradient(#2b2f2f, #2b2f2f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: min(5rem, 3.4722vw);
+    height: min(5rem, 3.4722vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .squareText {
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .squareText > span:nth-child(1) {
+    position: relative;
+    line-height: 0%;
+    font-size: min(1.4rem, 0.9722vw);
+  }
+
+  .squareText > span:nth-child(2) {
+    position: relative;
+    font-size: min(1rem, 0.6944vw);
+    transform: translateY(20%);
+  }
+
+  .squareFirstList {
+    padding-top: min(4.3rem, 2.9861vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: min(7rem, 4.8611vw);
+  }
+
+  .caption {
+    color: #fff;
+    text-align: center;
+    font-size: min(1.8rem, 1.25vw);
+    font-weight: 300;
+  }
+
+  .squareDetail {
+    display: flex;
+  }
+
+  .squareDetailSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .squareDetailSection:nth-child(1) {
+    margin-top: min(14.1rem, 9.79168vw);
+  }
+
+  .squareDetailSection:nth-child(2) {
+    margin-top: min(8.85rem, 6.1458vw);
+  }
+
+  .squareDetailSection:nth-child(3) {
+    margin-top: min(6.3rem, 4.375vw);
+    gap: min(10.5rem, 7.2917vw);
+  }
+
+  .squareDetailSection:nth-child(4) {
+    margin-top: min(2.45rem, 1.7014vw);
+    gap: min(6.2rem, 4.3056vw);
+  }
+
+  .squareDetailSection:nth-child(5) {
+    gap: min(1.2rem, 0.8333vw);
+    margin-top: min(0.0694vw, 0.1rem);
+  }
+
+  .squareDetailSection:nth-child(6) {
+    gap: min(0.2rem, 0.1389vw);
+  }
+
+  .svgTwoToOneLargeLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: min(15.5rem, 10.7639vw);
+    width: auto;
+  }
+
+  .svgOneToThreeLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: min(12.4rem, 8.6111vw);
+    width: auto;
+  }
+
+  .svgOneToTwoSmallLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: min(6.2rem, 4.3056vw);
+    width: auto;
+  }
+
+  .final {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+  }
+  .svgSpringLineWrapper {
+    position: relative;
+    width: min(3.2rem, 2.222vw);
+    height: auto;
+  }
+  .svgSpringLine {
+    position: relative;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: min(3.4rem, 2.3611vw);
+    height: auto;
+  }
+
+  .svgRhombus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: min(6rem, 4.167vw);
+    height: auto;
+  }
+
+  .svgRhombusText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d0e0e;
+    font-size: min(1.4rem, 0.9722vw);
+    font-weight: 600;
+  }
+
+  .svgRhombusText > span {
+    color: #0d0e0e;
+    font-size: min(1rem, 0.6944vw);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: #0d0e0e;
+  }
+
+  .subSection {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 5%;
+    position: relative;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
+
+  .content {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    z-index: 2;
+    padding-right: 5%;
+  }
+
+  .content > li {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .content > li > div:nth-child(1) {
+    padding: 0 1rem;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    flex-shrink: 0;
+  }
+
+  .content > li > div:nth-child(2) {
+    display: inline-block;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+
+  .stepList {
+    display: flex;
+    gap: 0.64rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    padding: 2.6rem 8% 2rem 0;
+    scrollbar-color: #2b2f2f #191b1b;
+    scrollbar-width: thin;
+  }
+
+  .stepList::-webkit-scrollbar {
+    height: 0.8rem;
+  }
+  .stepList::-webkit-scrollbar-thumb {
+    background-color: #2b2f2f;
+    border-radius: 0.8rem;
+  }
+  .stepList::-webkit-scrollbar-track {
+    background-color: #191b1b;
+    border-radius: 0.8rem;
+  }
+
+  /* .stepList {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .stepList::-webkit-scrollbar {
+    display: none;
+  } */
+
+  .stepItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.64rem;
+    position: relative;
+  }
+
+  .stepItem:nth-child(1):hover .svgParallelogramGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(1):hover .svgParallelogramHollowGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(2):hover .svgParallelogramGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(2):hover .svgParallelogramHollowGreen {
+    color: #00f0ff;
+  }
+
+  .stepItem:nth-child(3):hover .svgParallelogramBlue {
+    color: blueviolet;
+  }
+
+  .stepItem:nth-child(3):hover .svgParallelogramBlue {
+    color: blueviolet;
+  }
+
+  .stepItem:nth-child(4):hover .svgParallelogramBlue {
+    color: blueviolet;
+  }
+
+  .stepItem:nth-child(5):hover .svgParallelogramNavy {
+    color: darkslateblue;
+  }
+
+  .stepItem:nth-child(6):hover .svgParallelogramNavy {
+    color: darkslateblue;
+  }
+
+  .stepItem:nth-child(2n) > .stepTitle {
+    visibility: hidden;
+  }
+
+  .stepTitle {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .stepContent {
+    width: 17.6rem;
+    height: 3.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5.5%);
+    transition: all 1s linear;
+  }
+
+  .stepContent:nth-child(2) {
+    width: 17.6rem;
+    height: 3.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5.5%);
+  }
+
+  .stepContent:nth-child(3) {
+    width: 17.6rem;
+    height: 3.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(5.5%, -100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .stepContent:nth-child(4) {
+    width: 17.6rem;
+    height: 3.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(5.5%, -200%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .stepContent:nth-child(5) {
+    width: 17.6rem;
+    height: 3.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(5.5%, -300%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .stepContent.on {
+    transform: translateX(5.5%);
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
+  }
+
+  .stepText {
+    color: #d4ddde;
+    font-size: 1.4rem;
+    font-weight: 300;
+    z-index: 2;
+  }
+
+  .stepBrightText {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    z-index: 2;
+  }
+
+  .svgParallelogramGreen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19.52rem;
+    color: #006f77;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramHollowGreen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19.52rem;
+    color: #006f77;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramBlue {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19.52rem;
+    color: navy;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramHollowBlue {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19.52rem;
+    color: navy;
+    transition: all 0.3s linear;
+  }
+
+  .svgParallelogramNavy {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19.52rem;
+    color: #020064;
+    transition: all 0.3s linear;
+  }
+
+  .diagramContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1.6rem 0;
+  }
+
+  .diagramBox {
+    overflow-x: scroll;
+    margin-top: 1rem;
+    padding: 2rem 0;
+    scrollbar-color: #2b2f2f #191b1b;
+    scrollbar-width: thin;
+    padding-right: 5%;
+  }
+
+  .diagramBox::-webkit-scrollbar {
+    height: 0.8rem;
+  }
+  .diagramBox::-webkit-scrollbar-thumb {
+    background-color: #2b2f2f;
+    border-radius: 0.8rem;
+  }
+  .diagramBox::-webkit-scrollbar-track {
+    background-color: #191b1b;
+    border-radius: 0.8rem;
+  }
+
+  .diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 71.6rem;
+    gap: 0.8rem;
+    padding: 1.6rem 0;
+    border-radius: 2.4rem;
+    border: 0.1rem solid #2b2f2f;
+    background: #0d0e0e;
+    transition: all 0.3s linear;
+  }
+
+  .diagram * {
+    transition: all 0.3s linear;
+  }
+
+  .diagram:hover {
+    border: 0.1rem solid #2b2f2f;
+    background: #2b2f2f;
+    transition: all 0.3s linear;
+  }
+
+  .diagram:hover * {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s linear;
+  }
+
+  .diagram:hover .svgDottedLine {
+    color: #898e8f;
+  }
+
+  .diagram:hover .circle,
+  .diagram:hover .square {
+    background-image: linear-gradient(#000, #000),
+      linear-gradient(90deg, rgb(217, 23, 94) 0%, rgb(238, 69, 100) 100%);
+    transition: all 0.3s linear;
+  }
+
+  .diagramSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circleList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.496rem;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 0.1rem solid transparent;
+    background-image: linear-gradient(#000, #000),
+      linear-gradient(#2b2f2f, #2b2f2f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 2.47rem;
+    height: 2.47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .circleText {
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .circleText > span:nth-child(1) {
+    position: relative;
+    line-height: 0%;
+    font-size: 0.867rem;
+  }
+
+  .circleText > span:nth-child(2) {
+    position: relative;
+    font-size: 0.691rem;
+    transform: translateY(20%);
+  }
+
+  .lineBox {
+    width: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .svgDottedLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29.2rem;
+    color: #2b2f2f;
+  }
+
+  .svgOneToOneTriangleArrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #fff;
+    visibility: hidden;
+  }
+
+  .arrowBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.97rem;
+    margin-left: 0.557rem;
+    margin-right: 0.619rem;
+  }
+
+  .svgThreeToOneTriangleArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 4.76rem;
+  }
+
+  .svgTwoToOneTriangleArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 4.76rem;
+  }
+
+  .square {
+    border: 0.1rem solid transparent;
+    background-image: linear-gradient(#000, #000),
+      linear-gradient(#2b2f2f, #2b2f2f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 3.09rem;
+    height: 3.09rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .squareText {
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .squareText > span:nth-child(1) {
+    position: relative;
+    line-height: 0%;
+    font-size: 0.86rem;
+  }
+
+  .squareText > span:nth-child(2) {
+    position: relative;
+    font-size: 0.6194rem;
+    transform: translateY(20%);
+  }
+
+  .squareFirstList {
+    padding-top: 2.663rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4.336rem;
+  }
+
+  .caption {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .squareDetail {
+    display: flex;
+  }
+
+  .squareDetailSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .squareDetailSection:nth-child(1) {
+    margin-top: 8.671rem;
+  }
+
+  .squareDetailSection:nth-child(2) {
+    margin-top: 5.42rem;
+  }
+
+  .squareDetailSection:nth-child(3) {
+    margin-top: 3.84rem;
+    gap: 6.503rem;
+  }
+
+  .squareDetailSection:nth-child(4) {
+    margin-top: 1.579rem;
+    gap: 3.84rem;
+  }
+
+  .squareDetailSection:nth-child(5) {
+    gap: 0.743rem;
+  }
+
+  .squareDetailSection:nth-child(6) {
+    gap: 0.15rem;
+  }
+
+  .svgTwoToOneLargeLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 9.6rem;
+    width: auto;
+  }
+
+  .svgOneToThreeLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 7.69rem;
+    width: auto;
+  }
+
+  .svgOneToTwoSmallLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 3.88rem;
+    width: auto;
+  }
+
+  .final {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+  }
+  .svgSpringLineWrapper {
+    position: relative;
+    width: 1.98rem;
+    height: auto;
+  }
+  .svgSpringLine {
+    position: relative;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 1.98rem;
+    height: auto;
+  }
+
+  .svgRhombus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 3.71rem;
+    height: auto;
+  }
+
+  .svgRhombusText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d0e0e;
+    font-size: 0.8671rem;
+    font-weight: 600;
+  }
+
+  .svgRhombusText > span {
+    color: #0d0e0e;
+    font-size: 0.6194rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,163 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+}
+
+.background {
+  object-fit: contain;
+  z-index: -1;
+  object-position: left;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translateY(-5vh);
+}
+
+.title {
+  color:  #fff;
+  text-align: right;
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2.34vh;
+}
+
+.content {
+  color: #c1c9c9;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10.83vh;
+  text-align: right;
+}
+
+.postscript {
+  color:  #898e8f;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5.7vh;
+  text-align: right;
+}
+
+.link {
+  border-radius: 2.4rem;
+  background: linear-gradient(90deg, rgb(238, 69, 100) 0%, #73041b 100%);
+  padding: 1.2rem 0;
+  width: 19.7rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:0.3s;
+}
+
+.link:hover {
+  background:  #e7f1f1;
+  color:#000;
+}
+.blank {
+  display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 5.6rem;
+  }
+  .content {
+    font-size: 1.8rem;
+  }
+  .postscript {
+    font-size: 1.4rem;
+  }
+  .link {
+    width: 15.3rem;
+    height: 5.6rem;
+    font-size: 2.8rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2.4rem 1.6rem 3.2rem;
+    z-index: 0;
+  }
+  .background {
+    all: unset;
+    border-radius: 1.2rem;
+    object-fit: contain;
+    width: 100%;
+    height: 68.7vw;
+    z-index: 0;
+    display: block;
+    overflow: hidden;
+  }
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .box {
+    width: 100%;
+    transform: translateY(0);
+  }
+  .title {
+    width: 100%;
+    text-align: left;
+    font-size: 3.6rem;
+    margin: 3.6rem 0 0.8rem;
+  }
+  .content {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    text-align: left;
+  }
+  .content br {
+    display: none;
+  }
+  .postscript {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 4.3rem;
+    text-align: right;
+  }
+  .link {
+    padding: 1.2rem 0;
+    width: 14.8rem;
+    height: 5.5rem;
+    font-size: 2.7rem;
+  }
+  .blank {
+    display: inline-block;
+    width: 0.8rem;
+  }
+}

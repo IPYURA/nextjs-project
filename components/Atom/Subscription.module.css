@@ -1,0 +1,208 @@
+.subscription {
+  width: 100%;
+  height: 52rem;
+  /* background: linear-gradient(180deg, #0d0e0e 0%, #191b1b 10%); */
+  background-color: #0d0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscriptionBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  border: 0.2rem solid;
+  width: auto;
+  flex-basis: 56.6rem;
+  height: 32rem;
+  background-color: black;
+  margin: 1.2rem;
+}
+
+.topBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.8rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2.4rem;
+  margin: 0 0.6rem;
+  border-bottom: 0.1rem solid;
+}
+
+.free {
+  border-color: #fff;
+}
+
+.premium {
+  border-color: #43f;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.arrow {
+  position: absolute;
+  top: 3.3rem;
+  right: 2.4rem;
+  width: 4.9rem;
+  height: 4.9rem;
+}
+.subTitle {
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.bottomBox {
+  padding: 1.9rem 2.4rem;
+  min-height: 8.8rem;
+  /* height: auto; */
+}
+
+.textList {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  list-style: disc inside none;
+}
+
+.textList > li {
+  padding: 0.5rem 0;
+}
+
+.postscript {
+  color: #c1c9c9;
+  text-align: right;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 5rem;
+  width: 80%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .subscription {
+    height: auto;
+  }
+  .subscriptionBox {
+    flex-wrap: wrap;
+  }
+  .box {
+    max-width: 44.2rem;
+    height: 25rem;
+  }
+  .topBox {
+    margin: 0 0.6rem;
+    min-height: 10.1rem;
+    border-bottom: 0.1rem solid #fff;
+    padding: 0.93rem 1.87rem;
+  }
+
+  .title {
+    font-size: 3.6rem;
+  }
+  .arrow {
+    top: 3rem;
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .subTitle {
+    font-size: 1.4rem;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+  .textList {
+    font-size: 1.2rem;
+  }
+
+  .postscript {
+    color: #c1c9c9;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 1.2rem;
+    margin-bottom: 4rem;
+    width: 62%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscription {
+    height: auto;
+  }
+  .subscriptionBox {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .box {
+    height: 20rem;
+    flex-basis: auto;
+    padding: 1.2rem 1.6rem;
+    height: auto;
+  }
+
+  .topBox {
+    padding: 0 0.8rem 1.6rem;
+    align-items: start;
+  }
+  .title {
+    font-size: 3.6rem;
+  }
+  .arrow {
+    top: 1.2rem;
+    right: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .subTitle {
+    font-size: 1.4rem;
+    word-break: keep-all;
+  }
+  .bottomBox {
+    flex: 1;
+    padding: 1.2rem 2.4rem;
+  }
+  .textList {
+    font-size: 1.2rem;
+  }
+
+  .postscript {
+    color: #c1c9c9;
+    text-align: right;
+    font-size: 1rem;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 4.8rem;
+    width: 90%;
+  }
+}

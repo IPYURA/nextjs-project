@@ -1,0 +1,215 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0e0e;
+  gap: 5.76vh;
+}
+
+.container > * {
+  transform: translateY(-10vh);
+}
+
+.container br {
+  display: none;
+}
+
+.subTitle {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box {
+  width: 96.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.17rem;
+}
+
+.listBox {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  color: rgb(238, 69, 100);
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 1.2rem;
+  border: 0.2rem solid #2b2f2f;
+  background: #000;
+  gap: 2.4rem;
+  padding: 2rem;
+  list-style-position: inside;
+}
+
+.listBox > li {
+  margin-left: 2rem;
+}
+
+.listBox > li > span {
+  position: relative;
+  left: -1.2rem;
+}
+
+.listBox > li > span > span {
+  color: #fff;
+  font-weight: 400;
+}
+
+.text {
+  margin-top: 1.17vh;
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subText {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    gap: 0;
+  }
+  .subTitle {
+    margin: 4.9rem 0;
+    font-size: 2.8rem;
+  }
+  .box {
+    width: 100%;
+  }
+  .listBox {
+    padding: 1.56rem;
+    width: 54.8rem;
+    height: 11rem;
+    margin: 0 auto 1.8rem;
+    font-size: 2.5rem;
+    gap: 1.7rem;
+  }
+  .listBox > li {
+    margin-left: 0;
+  }
+  .text {
+    width: 54.8rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+  .whitespace {
+    display: none;
+  }
+  .subText {
+    width: 54.8rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 1.6rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0e0e;
+  }
+
+  .subTitle {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0.1239rem 0.2478rem rgba(0, 0, 0, 0.5);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    text-wrap: balance;
+    word-break: keep-all;
+    line-height: normal;
+    margin-top: 0.8rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listBox {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    color: rgb(238, 69, 100);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 1.6rem;
+    border: 0.2rem solid #2b2f2f;
+    background: #000;
+    gap: 0.8rem;
+    padding: 1.6rem 0.8rem 1.6rem 2.5rem;
+    list-style-position: outside;
+    word-break: keep-all;
+  }
+
+  .listBox > li {
+    margin-left: 0.5rem;
+  }
+
+  .listBox > li > span {
+    position: relative;
+    left: -0.6rem;
+  }
+
+  .listBox > li > span > span {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .text {
+    margin-top: 1.6rem;
+    margin-bottom: 0.4rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .subText {
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    text-wrap: balance;
+    word-break: keep-all;
+  }
+
+  .subText > span.whitespace {
+    display: none;
+  }
+
+  .subText > span {
+    text-wrap: nowrap;
+  }
+}

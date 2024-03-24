@@ -1,0 +1,235 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    line-height: normal;
+    gap: min(2.5vw, 3.6rem);
+    background-color: #0d0e0e;
+    padding: min(7.2rem, 5vw) 0;
+  }
+
+  .container > .text:nth-child(1) {
+    color: #c1c9c9;
+    font-size: min(1.94vw, 2.8rem);
+    font-weight: 400;
+  }
+
+  .container > .text:nth-child(2) {
+    color: #fff;
+    font-size: min(3.33vw, 4.8rem);
+    font-weight: 700;
+    text-align: center;
+    border-radius: 2.4rem;
+    border: 0.2rem solid #2b2f2f;
+    background: #191b1b;
+    padding: min(2.4rem, 1.67vw) min(4.8rem, 3.33vw);
+    transition: all 0.2s linear;
+  }
+
+  .container > .text:nth-child(2):hover {
+    border: 0.2rem solid rgb(238, 69, 100);
+    background: #000;
+  }
+
+  .container > .text:nth-child(3) {
+    color: #e7f1f1;
+    font-size: min(2.5vw, 3.6rem);
+    font-weight: 600;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: min(2.4rem, 1.667vw);
+  }
+
+  .box > .text {
+    color: #e7f1f1;
+    font-size: min(1.67vw, 2.4rem);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .model {
+    display: flex;
+    gap: min(6rem, 4.166vw);
+    border-radius: 2.4rem;
+    background: #191b1b;
+    padding: min(4rem, 2.778vw) min(12.1rem, 8.4028vw);
+    transition: all 0.2s linear;
+  }
+
+  .model:hover {
+    background: #2b2f2f;
+  }
+
+  .imgBox {
+    width: min(36.575rem, 25.399vw);
+    height: min(33rem, 22.916vw);
+    position: relative;
+  }
+
+  .background {
+    object-fit: contain;
+  }
+
+  .themeList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .themeItem {
+    font-style: normal;
+    line-height: normal;
+    width: min(45.5rem, 31.6vw);
+    height: min(8.6rem, 5.972vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: min(1.2rem, 0.833vw) min(2.4rem, 1.667vw);
+    border-radius: 1.2rem;
+    border: 0.2rem solid rgb(238, 69, 100);
+    background: #000;
+  }
+
+  .themeTitle {
+    color: #c1c9c9;
+    font-size: min(1.8rem, 1.25vw);
+    font-weight: 300;
+  }
+
+  .themeContent {
+    color: #fff;
+    font-size: min(2.4rem, 1.67vw);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    height: 58.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    line-height: normal;
+    gap: 0.8rem;
+    background-color: #0d0e0e;
+    text-wrap: balance;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .container > .text:nth-child(1) {
+    color: #c1c9c9;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .container > .text:nth-child(2) {
+    color: #fff;
+    max-width: 35.8rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1rem;
+    border: 0.1rem solid #2b2f2f;
+    background: #191b1b;
+    padding: 1.2rem 0;
+    transition: all 0.2s linear;
+  }
+
+  .container > .text:nth-child(2):hover {
+    border: 0.1rem solid rgb(238, 69, 100);
+    background: #000;
+  }
+
+  .container > .text:nth-child(3) {
+    color: #e7f1f1;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    max-width: 35.8rem;
+    width: 100%;
+    margin-top: 2.4rem;
+    gap: 0.8rem;
+  }
+
+  .box > .text {
+    color: #e7f1f1;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .model {
+    display: flex;
+    width: 100%;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    background: #191b1b;
+    padding: 1.2rem;
+    transition: all 0.2s linear;
+  }
+
+  .model:hover {
+    background: #2b2f2f;
+  }
+
+  .imgBox {
+    width: 11.8355rem;
+    height: 10.6265rem;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .background {
+    object-fit: contain;
+  }
+
+  .themeList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .themeItem {
+    font-style: normal;
+    line-height: normal;
+    max-width: 18.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    text-align: start;
+    border: 0.1rem solid rgb(238, 69, 100);
+    background: #000;
+  }
+
+  .themeTitle {
+    color: #c1c9c9;
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+
+  .themeContent {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+}

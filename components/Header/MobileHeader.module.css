@@ -1,0 +1,51 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  padding: 1rem 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover * {
+  color: rgb(238, 69, 100);
+}
+
+.svgLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  color: #fff;
+}
+
+.navButton {
+  all: unset;
+  cursor: pointer;
+}
+
+.navButton:hover * {
+  color: rgb(238, 69, 100);
+}
+
+.svgNavButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  color: #fff;
+}
+
+.on {
+  position: fixed;
+}
+
+.hidden {
+  position: fixed;
+  display: none;
+}

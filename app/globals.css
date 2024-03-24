@@ -1,0 +1,28 @@
+@import "./reset.css";
+
+/* @font-face {
+	font-family: "Pretendard Variable";
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('../assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+  } */
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+}
+
+main {
+  padding:
+    env(safe-area-inset-top)
+    env(safe-area-inset-right)
+    env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+/* @media screen and (max-width: 1024px) and (min-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+} */

@@ -1,0 +1,63 @@
+.container {
+  background-color: #FFF;
+  border-radius: 2.4rem;
+  padding: 2.4rem;
+}
+
+.title {
+  color: #000;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.button {
+  all: unset;
+  border-radius: 1.2rem;
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.google {
+  background: #E7F1F1;
+  color: #000;
+}
+
+.naver {
+  background: #30d158;
+  color: #fff;
+}
+
+.kakao {
+  background: #fee502;
+  color: #000;
+}
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 17rem;
+  gap: 2.4rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+

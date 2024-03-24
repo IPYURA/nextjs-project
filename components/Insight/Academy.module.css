@@ -1,0 +1,273 @@
+.container {
+  width: 100%;
+  background-color: #0d0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0;
+  gap: 1.2rem;
+}
+
+.linkBoxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 115.6rem;
+  gap: 2.4rem;
+  padding: 4.8rem 2.4rem;
+}
+
+.linkBoxWrapper {
+  flex-basis: 27.1rem;
+  height: 36rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  border: 0.2rem solid #2b2f2f;
+  background: #000;
+  box-shadow: 0px 0px 2.4rem 0px rgba(0, 0, 0, 0);
+  transition: all 0.2s linear;
+}
+
+.linkBoxWrapper:hover {
+  border: 0.2rem solid rgb(238, 69, 100);
+  box-shadow: 0px 0px 2.4rem 0px rgba(238, 69, 100, 0.5);
+  transition: all 0.2s linear;
+}
+
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3.6rem;
+  transform: translateY(1.65rem);
+  transition: all 0.2s linear;
+}
+
+.linkBoxWrapper:hover .linkBox {
+  transform: translateY(0);
+  transition: all 0.2s linear;
+}
+
+.imgBox {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkText {
+  color: #fff;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.linkContent {
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.unlinkBoxWrapper {
+  flex-basis: 27.1rem;
+  height: 36rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #898e8f;
+  border-radius: 1.2rem;
+  border: 0.2rem solid #2b2f2f;
+  background: #191b1b;
+  box-shadow: 0px 0px 2.4rem 0px rgba(0, 0, 0, 0);
+  transition: all 0.2s linear;
+}
+.unlinkBoxWrapper:hover {
+  background: #2b2f2f;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.unlinkBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3.6rem;
+  transform: translateY(1.65rem);
+  transition: all 0.2s linear;
+}
+
+.unlinkBoxWrapper:hover .unlinkBox {
+  transform: translateY(0);
+  transition: all 0.2s linear;
+}
+
+.unlinkText {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.unlinkContent {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.unlinkBoxWrapper:hover .unlinkContent {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+.linkBoxWrapper:hover .linkContent {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+.svgLogo {
+  width: 10rem;
+  height: 10rem;
+}
+.linkBox .svgLogo {
+  color: #fff;
+}
+
+.svgERDiagram {
+  width: 7.2rem;
+  height: 6rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    gap: 0.9rem;
+    padding: 8rem 0 5rem;
+  }
+  .linkBoxContainer {
+    margin-top: 3.6rem;
+    padding: 0;
+    width: 44rem;
+    height: 38rem;
+    display: grid;
+    grid-template: repeat(2, 18.2rem) / 1fr 1fr;
+    gap: 1.6rem;
+  }
+  .linkBox {
+    margin: 0;
+    transform: translateY(1.65rem);
+  }
+  .linkBoxWrapper:hover .linkBox {
+    transform: translateY(0);
+  }
+  .linkBoxWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .linkText {
+    font-size: 2.8rem;
+  }
+  .imgBox {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+  .unlinkBoxWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .unlinkBox {
+    gap: 0.9rem;
+    margin: 0;
+  }
+  .unlinkText {
+    font-size: 2.8rem;
+  }
+  .svgLogo {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 6.6rem 1.6rem;
+  }
+  .linkBoxContainer {
+    flex-direction: column;
+    padding: 3.2rem 1.6rem;
+  }
+  .linkBoxWrapper {
+    width: 100%;
+    max-height: 7.2rem;
+    padding: 0.6rem, 10.1rem;
+  }
+  .linkBoxWrapper:hover .linkText {
+    display: none;
+  }
+  .linkBoxWrapper:hover .linkContent {
+    display: inline-block;
+  }
+  .linkBoxWrapper:hover .linkBox {
+    transform: translateY(1.65rem);
+  }
+  .linkBox {
+    flex-direction: row;
+  }
+  .imgBox {
+    width: 6rem;
+    height: 6rem;
+    color: #fff;
+  }
+  .linkText {
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+  .linkContent {
+    display: none;
+    font-size: 2.4rem;
+    opacity: 0;
+  }
+  .unlinkBoxWrapper:hover .unlinkBox {
+    transform: translateY(1.65rem);
+  }
+  .unlinkBoxWrapper {
+    width: 100%;
+    max-height: 7.2rem;
+    padding: 0.6rem 0;
+  }
+  .unlinkBoxWrapper:hover .unlinkText {
+    display: none;
+  }
+  .unlinkBoxWrapper:hover .unlinkContent {
+    display: inline-block;
+  }
+  .unlinkBox {
+    height: 100%;
+    flex-direction: row;
+  }
+  .unlinkText {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+  .unlinkContent {
+    display: none;
+    font-size: 2.4rem;
+    opacity: 1;
+    color: #fff;
+  }
+}

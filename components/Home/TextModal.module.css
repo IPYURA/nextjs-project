@@ -1,0 +1,47 @@
+.container {
+  position: fixed;
+  z-index: 410;
+  top: 5vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+}
+.modalWrap {
+  position: relative;
+  padding: 7rem 3.2rem;
+  border-radius: 2.4rem;
+  width: 95vw;
+  max-width: 64rem;
+  height: 55vh;
+  background: #fff;
+  border: 2px solid #d4ddde;
+  transform: translateY(-10vh);
+}
+.content {
+  width: calc(100% + 0.8rem);
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-right: 0.8rem;
+  height: 40vh;
+  line-height: 1.4;
+  background: #fff;
+  color: #0d0e0e;
+  overflow: scroll;
+  text-align: justify;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .modalWrap {
+    max-width: 90vw;
+    height: 70vh;
+    transform: translateY(0);
+  }
+  .content {
+    font-size: 1.4rem;
+    height: calc(70vh - 11rem);
+    overflow: scroll;
+  }
+}

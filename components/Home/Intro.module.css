@@ -1,0 +1,172 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0e0e;
+}
+
+.container > * {
+  transform: translateY(-5vh);
+}
+
+.title {
+  margin-bottom: 4.9vh;
+  color: #fff;
+  text-align: center;
+  font-size: 4.6vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 115.5rem;
+  justify-content: center;
+  gap: 7.1rem;
+}
+
+.main button {
+  display: none;
+}
+
+.imgBox {
+  position: relative;
+  width: 39.06vh;
+  height: 53.6vh;
+}
+
+.content {
+  color: #fff;
+  min-width: 68.4rem;
+  width: 68.4rem;
+  text-align: justify;
+  font-size: calc((100vh - 102.4rem) / 100 + 1.4rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.66vh;
+}
+
+.content div {
+  text-align: right;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 3.6rem;
+  }
+  .main {
+    width: 68.9rem;
+    height: auto;
+    gap: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgBox {
+    width: 21.8rem;
+    height: 30.1rem;
+  }
+  .content {
+    display: none;
+  }
+  .main button {
+    display: block;
+  }
+  .button {
+    all: unset;
+    border-radius: 1.8rem;
+    background: rgb(238, 69, 100);
+    cursor: pointer;
+    padding: 0.9rem 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+  }
+
+  .button:hover {
+    background: #e7f1f1;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 58.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0e0e;
+    gap: 1.6rem;
+    padding: 0 1.6rem;
+  }
+
+  .title {
+    color: #fff;
+    text-align: center;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .imgBox {
+    position: relative;
+    width: 20.9rem;
+    height: 28.7rem;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .content div {
+    text-align: right;
+  }
+  .main button {
+    position: absolute;
+    bottom: -6rem;
+    display: block;
+  }
+  .button {
+    all: unset;
+    border-radius: 1.8rem;
+    background: rgb(238, 69, 100);
+    cursor: pointer;
+    padding: 0.9rem 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+  }
+
+  .button:hover {
+    background: #e7f1f1;
+    color: #000;
+  }
+}

@@ -1,0 +1,107 @@
+@media screen and (min-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 17.1rem);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .background {
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(13, 14, 14, 0) 85.71%,
+      #0d0e0e 100%
+    );
+  }
+
+  .title {
+    width: 57.1rem;
+    color: #fff;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    transform: translateX(-20vw);
+  }
+
+  .title > div:nth-child(2) {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    transform: translateX(0);
+    position: absolute;
+    font-size: 5rem;
+    left: 5vw;
+  }
+  .title > div:nth-child(2) {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(var(--vh, 100vh) - 8rem);
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+  }
+
+  .background {
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(13, 14, 14, 0) 85.71%,
+      #0d0e0e 100%
+    );
+  }
+
+  .title {
+    max-width: 32.1rem;
+    width: 100%;
+    color: #fff;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    transform: translateY(-25vh);
+  }
+
+  .title > div:nth-child(2) {
+    text-align: right;
+  }
+}

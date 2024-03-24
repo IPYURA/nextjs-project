@@ -1,0 +1,19 @@
+.container {
+  padding: 2.4rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+.hr {
+  height: 0.1rem;
+}
+
+.or {
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
